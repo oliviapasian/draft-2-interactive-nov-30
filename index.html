@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Draft 1</title>
+  <!-- CSS Styling -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Adobe Fonts Link -->
+  <link rel="stylesheet" href="https://use.typekit.net/zva5ato.css">
+</head>
+
+<body>
+
+  <!-- Start introduction overlay -->
+  <div class="introduction">
+    <h1>WELCOME!</h1>
+    <p>Explore Impressionism and Post-Impressionism in a whole new way through this interactive colour analysis
+      experience.</p>
+    <button class="get-started">ENTER</button>
+  </div>
+  <!-- End introduction overlay -->
+
+  <!-- Start Sidebar -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  </div>
+  <div class="filter-background"></div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">▷</button>  
+  </div>
+  <!-- End Sidebar -->
+
+  <div class="container">
+    <div class="filters">
+      <!-- Start group of filter buttons -->
+      <div class="filter-button-group">
+        <button data-filter="*" id="all-filter">All</button>
+        <button data-filter=".red" id="red-filter"></button>
+        <button data-filter=".orange" id="orange-filter"></button>
+        <button data-filter=".yellow" id="yellow-filter"></button>
+        <button data-filter=".green" id="green-filter"></button>
+        <button data-filter=".blue" id="blue-filter"></button>
+        <button data-filter=".purple" id="purple-filter"></button>
+      </div>
+      <!-- End group of filter buttons -->
+    </div>
+
+    <!-- Painting grids and titles -->
+    <div class="impressionism-title">
+      <h2>IMPRESSIONISM</h2>
+    </div>
+    <div class="post-impressionism-title">
+      <h2>POST-IMPRESSIONISM</h2>
+    </div>
+
+  	<div class="paintings1">
+	  </div>
+    <div class="paintings2">
+	  </div>
+
+
+<!--About content-->
+<div class="about-overlay">
+  <div class="about-content">
+    <h2>About</h2>
+    <p>I created this comparison based off my love for art history and Impressionism in particular. I love the colours in Impressionist paintings and wanted to compare them to a similar movement, Post-Impressionism, to see what differences might appear in the way colour is used.</p>
+    <h3>How were colour classifications decided?</h3>
+    <p>To decide on a main colour in each painting, I ran each image through colour simplifying programs to narrow down the primary colours, but often I used my own judgement. For example, if an image did not have an obvious main colour, I considered the overall hue of the painting as well as which section of colour was the most prominent.</p>
+    <h3>Futher Reading:</h3>
+    <p></p>
+    <h3>Sources</h3>
+    <p></p>
+    <!--popup's close button-->
+    <button class="close">CLOSE</button> </div>
+</div>
+<!--About button-->
+<button class="about-button">ABOUT</button>
+
+  <!-- Load jQuery, a JavaScript library to make JavaScript more readable and easier to use -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- Load Isoptope, a filter and sorting JavaScript library -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!-- Load relative JavaScript file -->
+  <script src="index.js"></script>
+
+</body>
+
+</html>
